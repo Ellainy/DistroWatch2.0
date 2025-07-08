@@ -5,184 +5,424 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual de Identidade Visual - DistroWatch</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
+        :root {
+            --primary: #fb6c2c;
+            --black: #000000;
+            --white: #ffffff;
+            --gray-100: #f5f5f5;
+            --gray-200: #e9e9e9;
+            --gray-300: #dddddd;
+            --gray-800: #424242;
         }
-        .brand-header {
-            background-color: #fb6c2c;
-            color: white;
-            padding: 2rem 0;
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: var(--black);
+            line-height: 1.6;
+            background-color: var(--white);
+        }
+        
+        .navbar {
+            background-color: var(--white);
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+        
+        .navbar-brand img {
+            height: 40px;
+        }
+        
+        .hero {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 4rem 0 3rem;
+        }
+        
+        .hero h1 {
+            font-weight: 700;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            margin-bottom: 0;
+        }
+        
+        .section {
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--gray-200);
+        }
+        
+        .section-title {
+            font-weight: 600;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--black);
+        }
+        
+        .card {
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+        
+        .card-header {
+            background-color: var(--white);
+            border-bottom: 1px solid var(--gray-200);
+            padding: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .card-body {
+            padding: 1.5rem;
+        }
+        
+        .color-swatch {
+            width: 100%;
+            height: 120px;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: flex-end;
+            padding: 1rem;
+            color: var(--white);
+            font-weight: 500;
+        }
+        
+        .typography-sample {
             margin-bottom: 2rem;
         }
-        .brand-color-primary {
-            background-color: #fb6c2c;
-            color: white;
+        
+        .typography-sample h1,
+        .typography-sample h2,
+        .typography-sample h3,
+        .typography-sample h4,
+        .typography-sample h5,
+        .typography-sample h6 {
+            margin-bottom: 0.5rem;
         }
-        .brand-color-black {
-            background-color: #000000;
-            color: white;
+        
+        .typography-sample p {
+            margin-bottom: 1.5rem;
         }
-        .brand-color-white {
-            background-color: #ffffff;
-            border: 1px solid #ddd;
-        }
-        .logo-example {
-            margin: 20px 0;
-            padding: 20px;
+        
+        .logo-preview {
+            background-color: var(--gray-100);
+            padding: 2rem;
+            border-radius: 8px;
             text-align: center;
+            margin-bottom: 1.5rem;
         }
-        .vertical-logo {
-            display: inline-block;
-            width: 120px;
-        }
-        .horizontal-logo {
-            display: inline-block;
-            width: 240px;
-        }
-        .typography-sample {
-            border: 1px solid #eee;
-            padding: 20px;
-            margin-bottom: 30px;
-        }
-        .color-box {
-            width: 100px;
-            height: 100px;
-            display: inline-block;
-            margin-right: 20px;
+        
+        .logo-dark-bg {
+            background-color: var(--black);
+            padding: 2rem;
+            border-radius: 8px;
             text-align: center;
-            line-height: 100px;
-            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer {
+            background-color: var(--black);
+            color: var(--white);
+            padding: 3rem 0;
+        }
+        
+        .footer a {
+            color: var(--white);
+            opacity: 0.8;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+        
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .code-sample {
+            background-color: var(--black);
+            color: var(--white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            overflow-x: auto;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            padding: 0.5rem 1.5rem;
+            font-weight: 500;
+        }
+        
+        .btn-primary:hover {
+            background-color: #e05d24;
+            border-color: #e05d24;
+        }
+        
+        .text-primary {
+            color: var(--primary) !important;
         }
     </style>
 </head>
 <body>
-    <header class="brand-header">
-        <div class="container text-center">
-            <h1 class="display-4">DistroWatch</h1>
-            <p class="lead mb-0">EXPLORE, ESCOLHA, EXECUTE</p>
-        </div>
-    </header>
-
-    <div class="container py-4">
-        <section id="brand" class="mb-5">
-            <h2 class="mb-4">Marca DistroWatch</h2>
-            <p>A marca DistroWatch deve ser utilizada conforme as especificações abaixo, mantendo sempre a integridade visual.</p>
-            
-            <div class="row">
-                <div class="col-md-6">
-                    <h3 class="h4">Logo Vertical</h3>
-                    <div class="logo-example">
-                        <div class="vertical-logo">
-                            <div style="font-weight: bold; font-size: 24px; font-family: 'Arial Black', Arial, sans-serif;">DistroWatch</div>
-                            <div style="font-size: 12px; letter-spacing: 1px; font-family: Arial, sans-serif;">EXPLORE, ESCOLHA, EXECUTE</div>
-                        </div>
-                    </div>
-                    <p><strong>Largura mínima:</strong> 0.5 polegada</p>
-                </div>
-                <div class="col-md-6">
-                    <h3 class="h4">Logo Horizontal</h3>
-                    <div class="logo-example">
-                        <div class="horizontal-logo">
-                            <div style="font-weight: bold; font-size: 24px; font-family: 'Arial Black', Arial, sans-serif; display: inline-block;">DistroWatch</div>
-                            <div style="font-size: 12px; letter-spacing: 1px; font-family: Arial, sans-serif; display: inline-block; margin-left: 10px;">EXPLORE, ESCOLHA, EXECUTE</div>
-                        </div>
-                    </div>
-                    <p><strong>Altura mínima:</strong> 0.5 polegada</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="colors" class="mb-5">
-            <h2 class="mb-4">Paleta de Cores</h2>
-            <div class="mb-4">
-                <div class="color-box brand-color-primary">#fb6c2c</div>
-                <div class="color-box brand-color-black">#000000</div>
-                <div class="color-box brand-color-white" style="color: #000;">#ffffff</div>
-            </div>
-            <p>A paleta de cores da marca é composta por três cores principais que devem ser utilizadas em todas as aplicações:</p>
-            <ul>
-                <li><strong>Laranja (#fb6c2c):</strong> Cor primária da marca</li>
-                <li><strong>Preto (#000000):</strong> Para textos e elementos secundários</li>
-                <li><strong>Branco (#ffffff):</strong> Para fundos e contraste</li>
-            </ul>
-        </section>
-
-        <section id="typography" class="mb-5">
-            <h2 class="mb-4">Tipografia</h2>
-            
-            <div class="typography-sample">
-                <h3>Logomarca</h3>
-                <p>A logomarca utiliza duas fontes diferentes:</p>
-                <ul>
-                    <li><strong>"DistroWatch":</strong> Arial Black ou fonte sans-serif bold similar</li>
-                    <li><strong>"EXPLORE, ESCOLHA, EXECUTE":</strong> Arial regular com letter-spacing de 1px</li>
-                </ul>
-                
-                <div class="mt-3 p-3 bg-light">
-                    <div style="font-weight: bold; font-size: 24px; font-family: 'Arial Black', Arial, sans-serif;">DistroWatch</div>
-                    <div style="font-size: 12px; letter-spacing: 1px; font-family: Arial, sans-serif;">EXPLORE, ESCOLHA, EXECUTE</div>
-                </div>
-            </div>
-            
-            <div class="typography-sample">
-                <h3>Textos do Site</h3>
-                <p>Para os conteúdos textuais do site, recomenda-se o uso da seguinte hierarquia tipográfica:</p>
-                
-                <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 2.5rem;">Título h1</h1>
-                <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 2rem;">Título h2</h2>
-                <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.75rem;">Título h3</h3>
-                <h4 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.5rem;">Título h4</h4>
-                <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.25rem;">Título h5</h5>
-                <h6 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1rem;">Título h6</h6>
-                
-                <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1rem; line-height: 1.6;">
-                    Parágrafo - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.
-                </p>
-                
-                <pre style="font-family: 'Courier New', Courier, monospace; background: #f5f5f5; padding: 15px; border-radius: 4px;">
-Código - // Exemplo de código
-function helloWorld() {
-    console.log("Hello, world!");
-}</pre>
-            </div>
-        </section>
-
-        <section id="usage" class="mb-5">
-            <h2 class="mb-4">Versões da Marca</h2>
-            <div class="row">
-                <div class="col-md-3 mb-4">
-                    <div class="p-3 bg-light text-center">
-                        <div style="font-weight: bold; font-family: 'Arial Black', Arial, sans-serif;">DistroWatch</div>
-                        <div style="font-size: 0.8rem; letter-spacing: 1px; font-family: Arial, sans-serif;">EXPLORE, ESCOLHA, EXECUTE</div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="p-3 brand-color-primary text-center">
-                        <div style="font-weight: bold; font-family: 'Arial Black', Arial, sans-serif; color: white;">DistroWatch</div>
-                        <div style="font-size: 0.8rem; letter-spacing: 1px; font-family: Arial, sans-serif; color: white;">EXPLORE, ESCOLHA, EXECUTE</div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="p-3 brand-color-black text-center">
-                        <div style="font-weight: bold; font-family: 'Arial Black', Arial, sans-serif; color: white;">DistroWatch</div>
-                        <div style="font-size: 0.8rem; letter-spacing: 1px; font-family: Arial, sans-serif; color: white;">EXPLORE, ESCOLHA, EXECUTE</div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="p-3 brand-color-white text-center">
-                        <div style="font-weight: bold; font-family: 'Arial Black', Arial, sans-serif; color: black;">DistroWatch</div>
-                        <div style="font-size: 0.8rem; letter-spacing: 1px; font-family: Arial, sans-serif; color: black;">EXPLORE, ESCOLHA, EXECUTE</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <footer class="bg-dark text-white py-4">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <p class="mb-0">© 2023 DistroWatch. Todos os direitos reservados.</p>
+            <a class="navbar-brand" href="#">
+                <img src="imgs/1deb2148-d6fe-4724-b077-adb90b675736.png" alt="DistroWatch Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#brand">Marca</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#colors">Cores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#typography">Tipografia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#usage">Aplicações</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container text-center">
+            <h1>DistroWatch</h1>
+            <p>EXPLORE, ESCOLHA, EXECUTE</p>
+        </div>
+    </section>
+
+    <section id="brand" class="section">
+        <div class="container">
+            <h2 class="section-title">Marca DistroWatch</h2>
+            <p class="mb-4">A marca DistroWatch deve ser utilizada conforme as especificações abaixo, mantendo sempre a integridade visual.</p>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">Logo Vertical</div>
+                        <div class="card-body">
+                            <div class="logo-preview">
+                                <div style="font-weight: bold; font-size: 24px; font-family: 'Arial Black', Arial, sans-serif;">DistroWatch</div>
+                                <div style="font-size: 12px; letter-spacing: 1px; font-family: Arial, sans-serif;">EXPLORE, ESCOLHA, EXECUTE</div>
+                            </div>
+                            <p><strong>Largura mínima:</strong> 0.5 polegada</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">Logo Horizontal</div>
+                        <div class="card-body">
+                            <div class="logo-preview">
+                                <div style="font-weight: bold; font-size: 24px; font-family: 'Arial Black', Arial, sans-serif; display: inline-block;">DistroWatch</div>
+                                <div style="font-size: 12px; letter-spacing: 1px; font-family: Arial, sans-serif; display: inline-block; margin-left: 10px;">EXPLORE, ESCOLHA, EXECUTE</div>
+                            </div>
+                            <p><strong>Altura mínima:</strong> 0.5 polegada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-4">
+                <div class="logo-grid">
+                    <div class="card">
+                        <div class="card-header">Versão Clara</div>
+                        <div class="card-body">
+                            <div class="logo-preview">
+                                <div style="font-weight: bold; font-size: 24px; font-family: 'Arial Black', Arial, sans-serif; color: var(--black);">DistroWatch</div>
+                                <div style="font-size: 12px; letter-spacing: 1px; font-family: Arial, sans-serif; color: var(--black);">EXPLORE, ESCOLHA, EXECUTE</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">Versão Escura</div>
+                        <div class="card-body">
+                            <div class="logo-dark-bg">
+                                <div style="font-weight: bold; font-size: 24px; font-family: 'Arial Black', Arial, sans-serif; color: var(--white);">DistroWatch</div>
+                                <div style="font-size: 12px; letter-spacing: 1px; font-family: Arial, sans-serif; color: var(--white);">EXPLORE, ESCOLHA, EXECUTE</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">Versão Colorida</div>
+                        <div class="card-body">
+                            <div class="logo-preview" style="background-color: var(--primary);">
+                                <div style="font-weight: bold; font-size: 24px; font-family: 'Arial Black', Arial, sans-serif; color: var(--white);">DistroWatch</div>
+                                <div style="font-size: 12px; letter-spacing: 1px; font-family: Arial, sans-serif; color: var(--white);">EXPLORE, ESCOLHA, EXECUTE</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="colors" class="section">
+        <div class="container">
+            <h2 class="section-title">Paleta de Cores</h2>
+            <p class="mb-4">A paleta de cores da marca é composta por três cores principais que devem ser utilizadas em todas as aplicações:</p>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="color-swatch" style="background-color: var(--primary);">
+                        #fb6c2c
+                    </div>
+                    <h4>Laranja Primário</h4>
+                    <p>Cor primária da marca, usada para elementos de destaque e interação.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="color-swatch" style="background-color: var(--black);">
+                        #000000
+                    </div>
+                    <h4>Preto</h4>
+                    <p>Para textos e elementos secundários.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="color-swatch" style="background-color: var(--white); border: 1px solid var(--gray-300); color: var(--black);">
+                        #ffffff
+                    </div>
+                    <h4>Branco</h4>
+                    <p>Para fundos e contraste.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="typography" class="section">
+        <div class="container">
+            <h2 class="section-title">Tipografia</h2>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">Logomarca</div>
+                        <div class="card-body">
+                            <p>A logomarca utiliza duas fontes diferentes:</p>
+                            <ul>
+                                <li><strong>"DistroWatch":</strong> Arial Black ou fonte sans-serif bold similar</li>
+                                <li><strong>"EXPLORE, ESCOLHA, EXECUTE":</strong> Arial regular com letter-spacing de 1px</li>
+                            </ul>
+                            
+                            <div class="mt-3 p-3 bg-light rounded">
+                                <div style="font-weight: bold; font-size: 24px; font-family: 'Arial Black', Arial, sans-serif;">DistroWatch</div>
+                                <div style="font-size: 12px; letter-spacing: 1px; font-family: Arial, sans-serif;">EXPLORE, ESCOLHA, EXECUTE</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">Hierarquia Tipográfica</div>
+                        <div class="card-body">
+                            <div class="typography-sample">
+                                <h1 style="font-weight: 700; font-size: 2.5rem;">Título h1</h1>
+                                <h2 style="font-weight: 600; font-size: 2rem;">Título h2</h2>
+                                <h3 style="font-weight: 600; font-size: 1.75rem;">Título h3</h3>
+                                <h4 style="font-weight: 600; font-size: 1.5rem;">Título h4</h4>
+                                <h5 style="font-weight: 600; font-size: 1.25rem;">Título h5</h5>
+                                <h6 style="font-weight: 600; font-size: 1rem;">Título h6</h6>
+                                
+                                <p style="font-size: 1rem; line-height: 1.6;">
+                                    Parágrafo - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.
+                                </p>
+                                
+                                <div class="code-sample">
+                                    // Exemplo de código<br>
+                                    function helloWorld() {<br>
+                                    &nbsp;&nbsp;console.log("Hello, world!");<br>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="usage" class="section">
+        <div class="container">
+            <h2 class="section-title">Aplicações da Marca</h2>
+            <p class="mb-4">Exemplos de como a marca pode ser aplicada em diferentes contextos:</p>
+            
+            <div class="logo-grid">
+                <div class="card">
+                    <div class="card-header">Fundo Claro</div>
+                    <div class="card-body">
+                        <div class="logo-preview">
+                            <div style="font-weight: bold; font-family: 'Arial Black', Arial, sans-serif;">DistroWatch</div>
+                            <div style="font-size: 0.8rem; letter-spacing: 1px; font-family: Arial, sans-serif;">EXPLORE, ESCOLHA, EXECUTE</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">Fundo Colorido</div>
+                    <div class="card-body">
+                        <div class="logo-preview" style="background-color: var(--primary);">
+                            <div style="font-weight: bold; font-family: 'Arial Black', Arial, sans-serif; color: white;">DistroWatch</div>
+                            <div style="font-size: 0.8rem; letter-spacing: 1px; font-family: Arial, sans-serif; color: white;">EXPLORE, ESCOLHA, EXECUTE</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">Fundo Escuro</div>
+                    <div class="card-body">
+                        <div class="logo-dark-bg">
+                            <div style="font-weight: bold; font-family: 'Arial Black', Arial, sans-serif; color: white;">DistroWatch</div>
+                            <div style="font-size: 0.8rem; letter-spacing: 1px; font-family: Arial, sans-serif; color: white;">EXPLORE, ESCOLHA, EXECUTE</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">Fundo Branco</div>
+                    <div class="card-body">
+                        <div class="logo-preview" style="background-color: var(--white); border: 1px solid var(--gray-300);">
+                            <div style="font-weight: bold; font-family: 'Arial Black', Arial, sans-serif; color: black;">DistroWatch</div>
+                            <div style="font-size: 0.8rem; letter-spacing: 1px; font-family: Arial, sans-serif; color: black;">EXPLORE, ESCOLHA, EXECUTE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="imgs/1deb2148-d6fe-4724-b077-adb90b675736.png" alt="DistroWatch Logo" height="40" class="mb-3">
+                    <p>© 2023 DistroWatch. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="d-block mb-2">Política de Privacidade</a>
+                    <a href="#" class="d-block mb-2">Termos de Uso</a>
+                    <a href="#" class="d-block">Contato</a>
+                </div>
+            </div>
         </div>
     </footer>
 

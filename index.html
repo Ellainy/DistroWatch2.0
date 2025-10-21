@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manual de Identidade Visual - DistroWatch</title>
+    <title>DistroWatch - Explore, Escolha, Execute</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="">
-                <img src="imgs/8.svg" alt="DistroWatch Logo">
+            <a class="navbar-brand" href="index.html">
+                <img src="imgs/10.svg" alt="DistroWatch Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -21,16 +20,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#brand">Marca</a>
+                        <a class="nav-link active" href="index.html">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#colors">Cores</a>
+                        <a class="nav-link" href="resultados.html">Distribuições</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="tipografia.html">Tipografia</a>
+                        <a class="nav-link" href="noticia.html">Notícias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#usage">Aplicações</a>
+                        <a class="nav-link" href="sobre.html">Sobre</a>
                     </li>
                 </ul>
             </div>
@@ -44,67 +43,37 @@
         </div>
     </section>
 
-    <section id="brand" class="section">
+    <section class="section">
         <div class="container">
-            <h2 class="section-title">Marca DistroWatch</h2>
-            <p class="mb-4">A marca DistroWatch deve ser utilizada conforme as especificações abaixo, mantendo sempre a integridade visual.</p>
-            
+            <h2 class="section-title text-center">Distribuições em Destaque</h2>
             <div class="row">
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">Logo Vertical</div>
+                <div class="col-md-4">
+                    <div class="card distro-card text-center">
                         <div class="card-body">
-                            <div class="logo-preview">
-                                <div style="font-weight: bold; font-size: 24px; font-family: 'Arial Black', Arial, sans-serif;">DistroWatch</div>
-                                <div style="font-size: 12px; letter-spacing: 1px; font-family: Arial, sans-serif;">EXPLORE, ESCOLHA, EXECUTE</div>
-                            </div>
-                            <p><strong>Largura mínima:</strong> 0.5 polegada</p>
+                            <img src="https://via.placeholder.com/120" alt="Ubuntu" class="img-fluid">
+                            <h5 class="card-title">Ubuntu</h5>
+                            <p class="card-text">Baseado no Debian, é uma das distribuições mais populares para iniciantes.</p>
+                            <a href="#" class="btn btn-primary">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">Logo Horizontal</div>
+                <div class="col-md-4">
+                    <div class="card distro-card text-center">
                         <div class="card-body">
-                            <div class="logo-preview">
-                                <div style="font-weight: bold; font-size: 24px; font-family: 'Arial Black', Arial, sans-serif; display: inline-block;">DistroWatch</div>
-                                <div style="font-size: 12px; letter-spacing: 1px; font-family: Arial, sans-serif; display: inline-block; margin-left: 10px;">EXPLORE, ESCOLHA, EXECUTE</div>
-                            </div>
-                            <p><strong>Altura mínima:</strong> 0.5 polegada</p>
+                            <img src="https://via.placeholder.com/120" alt="Fedora" class="img-fluid">
+                            <h5 class="card-title">Fedora</h5>
+                            <p class="card-text">Distribuição patrocinada pela Red Hat com foco em tecnologias recentes.</p>
+                            <a href="#" class="btn btn-primary">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="mt-4">
-                <div class="logo-grid">
-                    <div class="card">
-                        <div class="card-header">Versão Clara</div>
+                <div class="col-md-4">
+                    <div class="card distro-card text-center">
                         <div class="card-body">
-                            <div class="logo-preview">
-                                <div style="font-weight: bold; font-size: 24px; font-family: 'Arial Black', Arial, sans-serif; color: var(--black);">DistroWatch</div>
-                                <div style="font-size: 12px; letter-spacing: 1px; font-family: Arial, sans-serif; color: var(--black);">EXPLORE, ESCOLHA, EXECUTE</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-header">Versão Escura</div>
-                        <div class="card-body">
-                            <div class="logo-dark-bg">
-                                <div style="font-weight: bold; font-size: 24px; font-family: 'Arial Black', Arial, sans-serif; color: var(--white);">DistroWatch</div>
-                                <div style="font-size: 12px; letter-spacing: 1px; font-family: Arial, sans-serif; color: var(--white);">EXPLORE, ESCOLHA, EXECUTE</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-header">Versão Colorida</div>
-                        <div class="card-body">
-                            <div class="logo-preview" style="background-color: var(--primary);">
-                                <div style="font-weight: bold; font-size: 24px; font-family: 'Arial Black', Arial, sans-serif; color: var(--white);">DistroWatch</div>
-                                <div style="font-size: 12px; letter-spacing: 1px; font-family: Arial, sans-serif; color: var(--white);">EXPLORE, ESCOLHA, EXECUTE</div>
-                            </div>
+                            <img src="https://via.placeholder.com/120" alt="Arch Linux" class="img-fluid">
+                            <h5 class="card-title">Arch Linux</h5>
+                            <p class="card-text">Para usuários avançados que desejam controle total sobre seu sistema.</p>
+                            <a href="#" class="btn btn-primary">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -112,75 +81,25 @@
         </div>
     </section>
 
-    <section id="colors" class="section">
+    <section class="section bg-light-gray">
         <div class="container">
-            <h2 class="section-title">Paleta de Cores</h2>
-            <p class="mb-4">A paleta de cores da marca é composta por três cores principais que devem ser utilizadas em todas as aplicações:</p>
-            
+            <h2 class="section-title text-center">Últimas Notícias</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="color-swatch" style="background-color: var(--primary);">
-                        #fb6c2c
-                    </div>
-                    <h4>Laranja Primário</h4>
-                    <p>Cor primária da marca, usada para elementos de destaque e interação.</p>
-                </div>
-                <div class="col-md-4">
-                    <div class="color-swatch" style="background-color: var(--black);">
-                        #000000
-                    </div>
-                    <h4>Preto</h4>
-                    <p>Para textos e elementos secundários.</p>
-                </div>
-                <div class="col-md-4">
-                    <div class="color-swatch" style="background-color: var(--white); border: 1px solid var(--gray-300); color: var(--black);">
-                        #ffffff
-                    </div>
-                    <h4>Branco</h4>
-                    <p>Para fundos e contraste.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="usage" class="section">
-        <div class="container">
-            <h2 class="section-title">Aplicações da Marca</h2>
-            <p class="mb-4">Exemplos de como a marca pode ser aplicada em diferentes contextos:</p>
-            
-            <div class="logo-g                    <div class="card-header">Fundo Claro</div>
-                    <div class="card-body">
-                        <div class="logo-preview">
-                            <div style="font-weight: bold; font-family: 'Arial Black', Arial, sans-serif;">DistroWatch</div>
-                            <div style="font-size: 0.8rem; letter-spacing: 1px; font-family: Arial, sans-serif;">EXPLORE, ESCOLHA, EXECUTE</div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Nova versão do Ubuntu 22.10</h5>
+                            <p class="card-text">A Canonical lançou a versão mais recente do Ubuntu com várias melhorias de desempenho e novas funcionalidades.</p>
+                            <a href="noticia.html" class="btn btn-sm btn-primary">Ler Mais</a>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-header">Fundo Colorido</div>
-                    <div class="card-body">
-                        <div class="logo-preview" style="background-color: var(--primary);">
-                            <div style="font-weight: bold; font-family: 'Arial Black', Arial, sans-serif; color: white;">DistroWatch</div>
-                            <div style="font-size: 0.8rem; letter-spacing: 1px; font-family: Arial, sans-serif; color: white;">EXPLORE, ESCOLHA, EXECUTE</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">Fundo Escuro</div>
-                    <div class="card-body">
-                        <div class="logo-dark-bg">
-                            <div style="font-weight: bold; font-family: 'Arial Black', Arial, sans-serif; color: white;">DistroWatch</div>
-                            <div style="font-size: 0.8rem; letter-spacing: 1px; font-family: Arial, sans-serif; color: white;">EXPLORE, ESCOLHA, EXECUTE</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">Fundo Branco</div>
-                    <div class="card-body">
-                        <div class="logo-preview" style="background-color: var(--white); border: 1px solid var(--gray-300);">
-                            <div style="font-weight: bold; font-family: 'Arial Black', Arial, sans-serif; color: black;">DistroWatch</div>
-                            <div style="font-size: 0.8rem; letter-spacing: 1px; font-family: Arial, sans-serif; color: black;">EXPLORE, ESCOLHA, EXECUTE</div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Fedora 37 disponível para download</h5>
+                            <p class="card-text">A comunidade Fedora anunciou o lançamento da versão 37 com suporte aprimorado para hardware mais recente.</p>
+                            <a href="noticia.html" class="btn btn-sm btn-primary">Ler Mais</a>
                         </div>
                     </div>
                 </div>
@@ -192,7 +111,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="imgs/1deb2148-d6fe-4724-b077-adb90b675736.png" alt="DistroWatch Logo" height="40" class="mb-3">
+                    <img src="imgs/10.svg" alt="DistroWatch Logo" height="40" class="mb-3">
                     <p>© 2023 DistroWatch. Todos os direitos reservados.</p>
                 </div>
                 <div class="col-md-6 text-md-end">

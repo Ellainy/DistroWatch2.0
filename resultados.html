@@ -26,9 +26,6 @@
                         <a class="nav-link active" href="resultados.html">Distribuições</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="noticia.html">Notícias</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="sobre.html">Sobre</a>
                     </li>
                 </ul>
@@ -37,8 +34,8 @@
     </nav>
 
     <section class="search-hero">
-        <div class="container">
-            <h1 class="section-title">Resultados da Pesquisa</h1>
+        <div class="container my-5">
+            <h1 class="section-title laranja">Resultados da Pesquisa</h1>
             <div class="row mb-4">
                 <div class="col-md-8">
                     <div class="input-group">
@@ -49,7 +46,7 @@
                 <div class="col-md-4">
                     <select class="form-select">
                         <option selected>Ordenar por popularidade</option>
-                        <option>Ordenar por nome</option>
+                        <option>Ordenar por alfabeto</option>
                         <option>Ordenar por data de lançamento</option>
                     </select>
                 </div>
@@ -57,10 +54,10 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section my-5">
         <div class="container">
             <div class="table-responsive">
-                <table class="table table-hover distro-table">
+                <table class="table table-striped distro-table">
                     <thead>
                         <tr>
                             <th>Distribuição</th>
@@ -74,7 +71,7 @@
                         <tr>
                             <td>
                                 <div class="d-flex align-items-center">
-                                    <img src="https://via.placeholder.com/40" alt="Ubuntu" class="me-3">
+                                    <!-- <img src="https://via.placeholder.com/40" alt="Ubuntu" class="me-3"> -->
                                     <div>
                                         <strong>Ubuntu</strong>
                                         <div class="small text-muted">Canonical Ltd.</div>
@@ -93,7 +90,7 @@
                         <tr>
                             <td>
                                 <div class="d-flex align-items-center">
-                                    <img src="https://via.placeholder.com/40" alt="Fedora" class="me-3">
+                                    <!-- <img src="https://via.placeholder.com/40" alt="Fedora" class="me-3"> -->
                                     <div>
                                         <strong>Fedora</strong>
                                         <div class="small text-muted">Fedora Project</div>
@@ -112,7 +109,7 @@
                         <tr>
                             <td>
                                 <div class="d-flex align-items-center">
-                                    <img src="https://via.placeholder.com/40" alt="Arch Linux" class="me-3">
+                                    <!-- <img src="https://via.placeholder.com/40" alt="Arch Linux" class="me-3"> -->
                                     <div>
                                         <strong>Arch Linux</strong>
                                         <div class="small text-muted">Arch Linux Team</div>
@@ -128,18 +125,74 @@
                             </td>
                             <td><a href="#" class="btn btn-sm btn-primary">Detalhes</a></td>
                         </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <!-- <img src="https://via.placeholder.com/40" alt="Ubuntu" class="me-3"> -->
+                                    <div>
+                                        <strong>Debian</strong>
+                                        <div class="small text-muted">Canonical Ltd.</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Independente</td>
+                            <td>2022-10-20</td>
+                            <td>
+                                <div class="progress" style="height: 8px;">
+                                    <div class="progress-bar bg-primary" style="width: 95%"></div>
+                                </div>
+                            </td>
+                            <td><a href="#" class="btn btn-sm btn-primary">Detalhes</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <!-- <img src="https://via.placeholder.com/40" alt="Fedora" class="me-3"> -->
+                                    <div>
+                                        <strong>Brazilian linux</strong>
+                                        <div class="small text-muted">Cirilo Project</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Red Hat</td>
+                            <td>2022-11-15</td>
+                            <td>
+                                <div class="progress" style="height: 8px;">
+                                    <div class="progress-bar bg-primary" style="width: 85%"></div>
+                                </div>
+                            </td>
+                            <td><a href="#" class="btn btn-sm btn-primary">Detalhes</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <!-- <img src="https://via.placeholder.com/40" alt="Arch Linux" class="me-3"> -->
+                                    <div>
+                                        <strong>Alma Linux</strong>
+                                        <div class="small text-muted">Arch Linux Team</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Independente</td>
+                            <td>Rolling Release</td>
+                            <td>
+                                <div class="progress" style="height: 8px;">
+                                    <div class="progress-bar bg-primary" style="width: 15%"></div>
+                                </div>
+                            </td>
+                            <td><a href="#" class="btn btn-sm btn-primary">Detalhes</a></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
 
             <nav aria-label="Navegação de páginas">
-                <ul class="pagination justify-content-center">
+                <ul class="pagination justify-content-end">
                     <li class="page-item disabled">
                         <a class="page-link" href="#" tabindex="-1">Anterior</a>
                     </li>
                     <li class="page-item active"><a class="page-link" href="#">1</a></li>
                     <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
                     <li class="page-item">
                         <a class="page-link" href="#">Próxima</a>
                     </li>
